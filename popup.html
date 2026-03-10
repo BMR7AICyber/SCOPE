@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 500px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 15px; background-color: #f9f9f9; }
+        h2 { color: #1a237e; border-bottom: 2px solid #1a237e; padding-bottom: 8px; margin-top: 0; font-size: 20px;}
+        .extension-card { background: white; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .ext-header { font-size: 15px; font-weight: bold; margin-bottom: 8px; }
+        .alert-box { background-color: #ffebee; color: #c62828; padding: 8px; margin-bottom: 8px; border-left: 4px solid #c62828; font-size: 13px; font-weight: bold; border-radius: 2px; }
+        ul { margin: 0; padding-left: 20px; font-size: 13px; color: #424242; }
+        li { margin-bottom: 4px; }
+        .badge-critical { color: #c62828; }
+        .badge-high { color: #e65100; }
+        .badge-medium { color: #f57f17; }
+        .badge-low { color: #2e7d32; }
+        #loading { font-style: italic; color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h2>A.R.M.O.R. Security Scanner</h2>
+    <div id="loading">Running Deep Scan Diagnostics...</div>
+    <div id="results"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
