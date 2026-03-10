@@ -15,15 +15,15 @@ S.C.O.P.E - Supply-Chain Oversight & Permission Evaluator
 
 **How to Install (For Researchers):**
 
-Clone this repository.
+1. Clone this repository.
 
-Open Chrome and navigate to chrome://extensions.
+2. Open Chrome and navigate to chrome://extensions.
 
-Enable Developer Mode (top right toggle).
+3. Enable Developer Mode (top right toggle).
 
-Click Load unpacked and select the repository folder.
+4. Click Load unpacked and select the repository folder.
 
-Click the S.C.O.P.E. icon to generate your fleet's risk report.
+5. Click the S.C.O.P.E. icon to generate your fleet's risk report.
 
 **Technical Risk Mapping:**
 | Permission | Threat Profile |
@@ -32,3 +32,14 @@ Click the S.C.O.P.E. icon to generate your fleet's risk report.
 | cookies | Session Hijacking / MFA Bypass |
 | scripting | DOM Injection / Prompt Poaching |
 | fileSystem | Local Data Exfiltration |
+
+**Disclaimer**
+S.C.O.P.E. (Supply-Chain Oversight & Permission Evaluator) is a Proof-of-Concept (PoC) diagnostic tool intended for security research, auditing, and educational purposes only.
+
+Risk Assessment, Not Guarantee: This tool identifies potential risks based on declared permissions and heuristic patterns. A "Critical" score does not prove that an extension is malicious. Malicious intent can exist in extensions with minimal permissions through obfuscation or future updates.
+
+No Remediation: S.C.O.P.E. is a passive scanner. It does not disable, remove, or modify other extensions. Any administrative actions taken based on the output of this tool (such as uninstalling corporate software) are at the sole discretion and risk of the user/organization.
+
+"As-Is" Software: This software is provided "as is," without warranty of any kind, express or implied. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability arising from the use of this tool.
+
+Experimental Fetching: The "Deep Scan" feature attempts to fetch local manifest files. While engineered with safe error-handling, this behavior may trigger browser-level security warnings in the developer console. This is expected behavior and does not impact browser stability.
